@@ -1,10 +1,10 @@
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
 import Animated, {
-    interpolate,
-    SharedValue,
-    useAnimatedScrollHandler,
-    useAnimatedStyle,
-    useSharedValue,
+  interpolate,
+  SharedValue,
+  useAnimatedScrollHandler,
+  useAnimatedStyle,
+  useSharedValue,
 } from "react-native-reanimated";
 import { Item } from "./mockData";
 

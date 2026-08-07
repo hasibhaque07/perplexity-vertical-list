@@ -1,12 +1,12 @@
 import { StyleSheet, View } from "react-native";
-import VerticalList from "./VerticalList";
-import data from "./mockData";
+import App from "./animations/02-interpolate-with-scrollview/App";
 
 export default function Index() {
   //console.log(data);
   return (
     <View style={styles.container}>
-      <VerticalList data={data} />
+      {/* <VerticalList data={data} /> */}
+      <App />
     </View>
   );
 }
@@ -14,7 +14,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#111",
+    // backgroundColor: "#111",
     justifyContent: "center",
   },
 });
