@@ -1,5 +1,5 @@
 import { StyleSheet, View } from "react-native";
-import App from "./animations/02-interpolate-with-scrollview/App";
+import App from "./animations/06-scroll-behavior-with-pan-gesture/App";
 
 export default function Index() {
   //console.log(data);
