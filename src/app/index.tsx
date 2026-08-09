@@ -1,5 +1,5 @@
 import { StyleSheet, View } from "react-native";
-import App from "./animations/06-scroll-behavior-with-pan-gesture/App";
+import App from "./animations/12-sliding-counter/App";
 
 export default function Index() {
   //console.log(data);
