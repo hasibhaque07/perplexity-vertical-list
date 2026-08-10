@@ -5,10 +5,14 @@ faker.seed(12);
 const data = [...Array(20).keys()].map(() => ({
   key: faker.string.uuid(),
   title: faker.music.artist(),
-  image: faker.image.urlLoremFlickr({
+  // image: faker.image.urlLoremFlickr({
+  //   width: 300,
+  //   height: 300 * 1.4,
+  //   category: "nature",
+  // }),
+  image: faker.image.url({
     width: 300,
     height: 300 * 1.4,
-    category: "nature",
   }),
   bg: faker.color.rgb(),
   description: faker.lorem.sentences({ min: 1, max: 3 }),

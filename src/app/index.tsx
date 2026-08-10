@@ -1,5 +1,8 @@
 import { StyleSheet, View } from "react-native";
 import App from "./animations/12-sliding-counter/App";
+//import VerticalList from "./animations/00-perplexity-verticallist/VerticalList";
+//import data from "./animations/00-perplexity-verticallist/mockData";
+//import VerticalList from "./practice/verticalList/VerticalList";
 
 export default function Index() {
   //console.log(data);
@@ -14,7 +17,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#111",
+    //backgroundColor: "#111",
     justifyContent: "center",
   },
 });
