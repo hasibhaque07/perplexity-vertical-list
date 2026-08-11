@@ -1,12 +1,16 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from "react-native";
-import Animated, { FadeIn, FadeOut, Layout } from "react-native-reanimated";
+import Animated, {
+  FadeIn,
+  FadeOut,
+  LinearTransition,
+} from "react-native-reanimated";
 
 const LIST_ITEM_COLOR = "#1798DE";
 
@@ -30,7 +34,8 @@ export default function App() {
 
   // new Array(5).fill(0).map((_, index) => ({ id: index }))
   const [items, setItems] = useState<Item[]>(
-    new Array(5).fill(0).map((_, index) => ({ id: index })),
+    Array.from({ length: 5 }, (_, index) => ({ id: index })),
+    //new Array(5).fill(0).map((_, index) => ({ id: index })),
   );
 
   const onAdd = useCallback(() => {
@@ -62,8 +67,9 @@ export default function App() {
               entering={
                 initialMode.current ? FadeIn.delay(100 * index) : FadeIn
               }
+              //entering={FadeIn.delay(100 * index)}
               exiting={FadeOut}
-              layout={Layout.delay(100)}
+              layout={LinearTransition.delay(100)}
               onTouchEnd={() => onDelete(item.id)}
               style={styles.listItem}
             />
