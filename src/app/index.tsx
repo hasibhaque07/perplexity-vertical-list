@@ -1,5 +1,5 @@
 import { StyleSheet, View } from "react-native";
-import App from "./animations/17-circular-carousel/App";
+import App from "./animations/18-skeleton-animation/App";
 //import VerticalList from "./animations/00-perplexity-verticallist/VerticalList";
 //import data from "./animations/00-perplexity-verticallist/mockData";
 //import VerticalList from "./practice/verticalList/VerticalList";
