@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { Checkbox } from './components/checkbox';
-import { useCuisines } from './hooks/useCuisines';
+import Checkbox from "./components/checkbox";
+import useCuisines from "./hooks/useCuisines";
 
 const App = () => {
   const { cuisines, toggleCuisine } = useCuisines();
@@ -18,11 +18,12 @@ const App = () => {
           paddingTop: safeTop + 24,
           paddingLeft: 24,
         },
-      ]}>
+      ]}
+    >
       <StatusBar style="light" />
       <Text style={styles.title}>What are your favourite cuisines?</Text>
       <View style={styles.listContainer}>
-        {cuisines.map(cuisine => {
+        {cuisines.map((cuisine) => {
           return (
             <Checkbox
               key={cuisine.id}
@@ -42,20 +43,20 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: "#000",
   },
   title: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 26,
-    fontFamily: 'SF-Pro-Rounded-Bold',
+    fontFamily: "SF-Pro-Rounded-Bold",
   },
   listContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    flexWrap: "wrap",
     gap: 14,
     marginTop: 24,
     paddingRight: 16,
   },
 });
 
-export { App };
+export default App;

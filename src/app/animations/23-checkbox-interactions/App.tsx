@@ -1,7 +1,7 @@
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
-import { App } from './src';
-import { FontsProvider } from './src/providers/fonts-provider';
+import App from "./src";
+import FontsProvider from "./src/providers/fonts-provider";
 
 const AppContainer = () => {
   return (
