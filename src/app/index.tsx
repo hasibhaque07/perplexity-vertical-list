@@ -1,5 +1,5 @@
 import { StyleSheet, View } from "react-native";
-import App from "./animations/24-story-list/App";
+import App from "./animations/25-pager-dots/App";
 //import VerticalList from "./animations/00-perplexity-verticallist/VerticalList";
 //import data from "./animations/00-perplexity-verticallist/mockData";
 //import VerticalList from "./practice/verticalList/VerticalList";
