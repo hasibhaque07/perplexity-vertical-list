@@ -47,7 +47,7 @@ const OnboardingScreen = () => {
   const handlePress = async () => {
     if (currentIndex === data.length - 1 && !active) {
       console.log("END");
-      //router.back();
+      router.back();
       return;
     }
 
