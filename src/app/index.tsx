@@ -1,5 +1,5 @@
 import { StyleSheet, View } from "react-native";
-import App from "./animations/26-React-Native-Masking-Onboarding-Screen/App";
+import App from "./animations/21-animated-split-button/App";
 //import VerticalList from "./animations/00-perplexity-verticallist/VerticalList";
 //import data from "./animations/00-perplexity-verticallist/mockData";
 //import VerticalList from "./practice/verticalList/VerticalList";
