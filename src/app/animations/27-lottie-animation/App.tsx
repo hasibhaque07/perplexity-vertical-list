@@ -1,12 +1,18 @@
-import { View } from "react-native";
-import BlinkOnTouch from "./BlinkOnTouch";
+import { StyleSheet, View } from "react-native";
+import MascotOnboarding from "./MascotOnboarding";
 
 const App = () => {
   return (
-    <View>
-      <BlinkOnTouch />
+    <View style={styles.container}>
+      <MascotOnboarding />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 export default App;
